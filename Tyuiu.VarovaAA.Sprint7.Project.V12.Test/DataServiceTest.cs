@@ -19,6 +19,7 @@ namespace Tyuiu.VarovaAA.Sprint7.Project.V12.Test
             int column = 1;
             string res = ds.CollectTextFromFile(path, row, column);
 
+
             string wait = "BoDe-WDH9";
             Assert.AreEqual(wait, res);
         }
