@@ -15,7 +15,7 @@ namespace Tyuiu.VarovaAA.Sprint7.Project.V12.Test
 
             string path = @"C:\Users\User\source\repos\Tyuiu.VarovaAA.Sprint7.Project.V12\Tyuiu.VarovaAA.Sprint7.Project.V12\bin\Release\InPutDataFile.csv";
 
-            int row = 1;
+            string row = "HUAWEI";
             int column = 1;
             string res = ds.CollectTextFromFile(path, row, column);
 
