@@ -29,6 +29,7 @@ namespace Tyuiu.VarovaAA.Sprint7.Project.V12
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelButtonsInPut_VAA = new System.Windows.Forms.Panel();
             this.buttonShowShopInfo_VAA = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@ namespace Tyuiu.VarovaAA.Sprint7.Project.V12
             this.textBoxShowModels_VAA = new System.Windows.Forms.TextBox();
             this.textBoxRes_VAA = new System.Windows.Forms.TextBox();
             this.textBoxShopInfo_VAA = new System.Windows.Forms.TextBox();
+            this.toolTip_VAA = new System.Windows.Forms.ToolTip(this.components);
             this.panelButtonsInPut_VAA.SuspendLayout();
             this.groupBoxInfo_VAA.SuspendLayout();
             this.panelRes_VAA.SuspendLayout();
@@ -82,6 +84,7 @@ namespace Tyuiu.VarovaAA.Sprint7.Project.V12
             this.buttonShowShopInfo_VAA.Name = "buttonShowShopInfo_VAA";
             this.buttonShowShopInfo_VAA.Size = new System.Drawing.Size(100, 50);
             this.buttonShowShopInfo_VAA.TabIndex = 4;
+            this.toolTip_VAA.SetToolTip(this.buttonShowShopInfo_VAA, "Выводит информацию о фирме-реализаторе.");
             this.buttonShowShopInfo_VAA.UseVisualStyleBackColor = false;
             this.buttonShowShopInfo_VAA.Click += new System.EventHandler(this.buttonShowShopInfo_VAA_Click);
             // 
@@ -95,6 +98,7 @@ namespace Tyuiu.VarovaAA.Sprint7.Project.V12
             this.buttonShowModels_VAA.Name = "buttonShowModels_VAA";
             this.buttonShowModels_VAA.Size = new System.Drawing.Size(100, 50);
             this.buttonShowModels_VAA.TabIndex = 3;
+            this.toolTip_VAA.SetToolTip(this.buttonShowModels_VAA, "Выводит модели ноутбуков, которые есть в базе данных.");
             this.buttonShowModels_VAA.UseVisualStyleBackColor = false;
             this.buttonShowModels_VAA.Click += new System.EventHandler(this.buttonShowModels_VAA_Click);
             // 
@@ -249,6 +253,7 @@ namespace Tyuiu.VarovaAA.Sprint7.Project.V12
             this.buttonInfo_VAA.Name = "buttonInfo_VAA";
             this.buttonInfo_VAA.Size = new System.Drawing.Size(100, 50);
             this.buttonInfo_VAA.TabIndex = 0;
+            this.toolTip_VAA.SetToolTip(this.buttonInfo_VAA, "Информация о разработчике.");
             this.buttonInfo_VAA.UseVisualStyleBackColor = false;
             this.buttonInfo_VAA.Click += new System.EventHandler(this.buttonInfo_VAA_Click);
             // 
@@ -332,6 +337,10 @@ namespace Tyuiu.VarovaAA.Sprint7.Project.V12
             this.textBoxShopInfo_VAA.TabIndex = 1;
             this.textBoxShopInfo_VAA.TextChanged += new System.EventHandler(this.textBoxShopInfo_VAA_TextChanged);
             // 
+            // toolTip_VAA
+            // 
+            this.toolTip_VAA.ToolTipTitle = "Подсказка";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -377,6 +386,7 @@ namespace Tyuiu.VarovaAA.Sprint7.Project.V12
         private System.Windows.Forms.Label labelShopInfo_VAA;
         private System.Windows.Forms.Label labelShowModels_VAA;
         private System.Windows.Forms.Label labelRes_VAA;
+        private System.Windows.Forms.ToolTip toolTip_VAA;
     }
 }
 
